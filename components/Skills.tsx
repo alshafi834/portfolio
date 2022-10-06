@@ -4,19 +4,19 @@ const Skills: React.FC = () => {
   return (
     <div className="flex justify-center bg-darkblue">
       <div className="w-[70%] flex flex-col py-12">
-        <div className="flex flex-row justify-end">
-          <span className="border-t border-[#243654] block w-[400px] mt-4 mr-4"></span>
+        <div className="flex flex-row xl:justify-end">
+          <span className="border-t border-[#243654] w-[400px] hidden xl:block mt-4 mr-4"></span>
           <h1 className="text-2xl text-[#CCD6F5] font-bold">Skill Set</h1>
         </div>
         <div className="flex flex-col text-textcolor2">
-          <div className="flex flex-row mt-4">
+          <div className="lg:flex lg:flex-row mt-4">
             <h3 className="text-themecolor mr-4 w-[15%]">Programming: </h3>
             <p className="font-mono w-[85%]">
               JavaScript(ES6+), TypeScript, HTML, CSS/Sass, Python, SQL, NoSQL
             </p>
           </div>
-          <div className="flex flex-row mt-4">
-            <h3 className="text-themecolor mr-4 w-[15%]">
+          <div className="lg:flex lg:flex-row mt-4">
+            <h3 className="text-themecolor mr-4 lg:w-[15%]">
               Technologies and Libraries:
             </h3>
             <div className="w-[85%]">
@@ -33,13 +33,13 @@ const Skills: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row mt-4">
+          <div className="lg:flex lg:flex-row mt-4">
             <h3 className="text-themecolor mr-4 w-[15%]">Testing: </h3>
             <p className="font-mono w-[85%]">
               Cypress, Jest, SuperTest, Selenium
             </p>
           </div>
-          <div className="flex flex-row mt-4">
+          <div className="lg:flex lg:flex-row mt-4">
             <h3 className="text-themecolor mr-4 w-[15%]">Tools: </h3>
             <p className="font-mono w-[85%]">
               Git/Github, Postman/Insomnia, Jenkins, Sentry, Instana, VScode,

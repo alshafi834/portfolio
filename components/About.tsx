@@ -8,9 +8,9 @@ const About = () => {
       <div className="w-[70%] flex flex-col py-12">
         <div className="flex flex-row">
           <h1 className="text-2xl text-[#CCD6F5] font-bold">About Me</h1>
-          <span className="border-t border-[#243654] block w-[400px] mt-4 ml-4"></span>
+          <span className="border-t border-[#243654] hidden lg:block w-[400px] mt-4 ml-4"></span>
         </div>
-        <div className="flex gap-20 justify-between">
+        <div className="lg:flex gap-20 justify-between">
           <div className="text-textcolor2 mt-12">
             <p>
               Hello! My name is Shafi and I enjoy creating things that live on
@@ -27,7 +27,7 @@ const About = () => {
               Upstatement for a variety of clients.
             </p>
           </div>
-          <div className="">
+          <div className="mt-8 lg:mt-0">
             <Image
               className="border rounded"
               src={profilePic}
