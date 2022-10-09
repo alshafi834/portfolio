@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
         <div className="flex flex-col text-textcolor2">
           <div className="lg:flex lg:flex-row mt-4">
             <h3 className="text-themecolor mr-4 w-[15%]">Programming: </h3>
-            <p className="font-mono w-[85%]">
+            <p className="font-sfmono w-[85%]">
               JavaScript(ES6+), TypeScript, HTML, CSS/Sass, Python, SQL, NoSQL
             </p>
           </div>

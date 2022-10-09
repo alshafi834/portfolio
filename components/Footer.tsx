@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-darkblue p-8 font-mono">
+    <div className="bg-darkblue p-8 font-sfmono">
       <p className="text-textcolor2 text-xs text-center">
         Designed and Developed by Abu Hena Al Shafi
       </p>

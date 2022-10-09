@@ -20,6 +20,10 @@ module.exports = {
         900: "900px",
         458: "458px",
       },
+      fontFamily: {
+        calibre: ["Calibre"],
+        sfmono: ["Sfmono"],
+      },
       top: {
         " 50%": "50%",
       },

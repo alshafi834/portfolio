@@ -8,11 +8,14 @@ import { projects } from "../contents/data/projects";
 const Projects = () => {
   //const loop = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
-    <div className="bg-darkblue p-6" id="Projects">
+    <div className="bg-darkblue p-5" id="Projects">
       <header>
-        <h2 className="text-textcolor text-center text-3xl font-bold pb-20">
+        <h2 className="text-textcolor text-center text-4xl font-bold pb-4 font-calibre">
           Projects
         </h2>
+        <p className="text-themecolor text-center hover:underline pb-16 text-sm font-mono">
+          <a href="https://github.com/alshafi834">Check all projects</a>
+        </p>
       </header>
       <section className="flex justify-center">
         <div className="lg:w-[70%] grid lg:grid-cols-3 gap-4">
@@ -36,13 +39,15 @@ const Projects = () => {
                 <h2 className="text-textcolor font-bold text-xl">
                   {lp.fields.name}
                 </h2>
-                <p className="text-sm text-textcolor2 mt-4">
+                <p className="text-sm text-textcolor2 mt-4 h-[100px]">
                   {lp.fields.description}
                 </p>
                 <div className="flex mt-8 text-textcolor2 font-mono text-xs">
-                  <span className="pr-4">Next.js</span>
-                  <span className="pr-4">Next.js</span>
-                  <span>Next.js</span>
+                  {lp.fields.tech.map((tc) => (
+                    <span key={tc} className="pr-4 font-sfmono">
+                      {tc}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>

@@ -10,7 +10,7 @@ import { TbBrandSpotify } from "react-icons/tb";
 
 const Contact = () => {
   return (
-    <div className="bg-darkblue flex flex-col p-20" id="Contact">
+    <div className="bg-darkblue flex flex-col p-20 mt-6" id="Contact">
       <h1 className="font-semibold text-6xl text-textcolor text-center">
         Get In Touch
       </h1>
@@ -47,7 +47,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="flex justify-center mt-10">
-        <button className="px-8 py-4 border border-themecolor rounded text-themecolor hover:bg-[#112340]">
+        <button className="px-8 py-4 border border-themecolor rounded text-themecolor hover:bg-[#112340] font-sfmono text-sm">
           <a href="mailto:alshafi834@gmail.com">Say Hello</a>
         </button>
       </div>
