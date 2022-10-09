@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills: React.FC = () => {
   return (
-    <div className="flex justify-center bg-darkblue">
+    <div className="flex justify-center bg-darkblue" id="Skills">
       <div className="w-[70%] flex flex-col py-12">
         <div className="flex flex-row xl:justify-end">
           <span className="border-t border-[#243654] w-[400px] hidden xl:block mt-4 mr-4"></span>

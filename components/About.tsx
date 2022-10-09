@@ -4,7 +4,7 @@ import profilePic from "../contents/images/propic.jpeg";
 
 const About = () => {
   return (
-    <div className="flex justify-center bg-darkblue">
+    <div className="flex justify-center bg-darkblue" id="About">
       <div className="w-[70%] flex flex-col py-12">
         <div className="flex flex-row">
           <h1 className="text-2xl text-[#CCD6F5] font-bold">About Me</h1>

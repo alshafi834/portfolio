@@ -10,7 +10,7 @@ import { TbBrandSpotify } from "react-icons/tb";
 
 const Contact = () => {
   return (
-    <div className="bg-darkblue flex flex-col p-20">
+    <div className="bg-darkblue flex flex-col p-20" id="Contact">
       <h1 className="font-semibold text-6xl text-textcolor text-center">
         Get In Touch
       </h1>

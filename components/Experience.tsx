@@ -9,7 +9,7 @@ const Experience: React.FC = () => {
   const active =
     "w-[200px] text-sm font-mono py-2 pl-4 cursor-pointer bg-[#112340] text-themecolor lg:border-l-themecolor lg:border-l-2";
   return (
-    <div className="flex justify-center bg-darkblue py-20">
+    <div className="flex justify-center bg-darkblue py-20" id="Experience">
       <div className="lg:w-[60%] w-[80%] flex flex-col py-12">
         <div className="flex flex-row">
           <h1 className="text-2xl text-[#CCD6F5] font-bold">

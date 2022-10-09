@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <div className="flex flex-col xl:p-44 p-12 bg-darkblue text-textcolor">
+    <div
+      className="flex flex-col xl:p-44 p-12 bg-darkblue text-textcolor"
+      id="Hero"
+    >
       <p className="text-themecolor font-mono py-2">Hello World! My name is</p>
       <h1 className="text-7xl font-sans py-2">Al Shafi.</h1>
       <h2 className="text-7xl font-sans py-2 text-textcolor2">
