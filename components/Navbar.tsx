@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../contents/images/signature.png";
 import Image from "next/image";
+import { useRouter } from "next/router";
+
+import { useAppDispatch, useAppSelector } from "../app/hooks";
+import { updateActiveNav } from "../features/navbar/navbarSlice";
 
 const Navbar: React.FC = () => {
+  const { asPath } = useRouter();
+  const hash = asPath.split("#")[1];
+
+  const regNav = "ml-8 cursor-pointer hover:text-themecolor";
+  const activeNav = "ml-8 cursor-pointer hover:text-themecolor text-themecolor";
+
+  const actvNav = useAppSelector((state) => state.navbar.activeNav);
+  const dispatch = useAppDispatch();
+
+  const handleClick = (nav: string) => {
+    dispatch(updateActiveNav(nav));
+  };
+
   const navList: string[] = [
     "About",
     "Skills",
@@ -10,6 +27,11 @@ const Navbar: React.FC = () => {
     "Projects",
     "Contact",
   ];
+
+  useEffect(() => {
+    dispatch(updateActiveNav(hash));
+  }, [dispatch, hash]);
+
   return (
     <div className="flex justify-center pt-4 pb-2 bg-darkblue text-textcolor mb:invisible sticky top-0 drop-shadow-lg">
       <div className="flex justify-between w-[90%]">
@@ -21,8 +43,9 @@ const Navbar: React.FC = () => {
         <div className="hidden lg:block font-sfmono text-sm">
           {navList.map((nav) => (
             <span
-              className="ml-8 cursor-pointer hover:text-themecolor"
+              className={nav === actvNav ? activeNav : regNav}
               key={nav}
+              onClick={() => handleClick(nav)}
             >
               <a href={`#${nav}`}>{nav}</a>
             </span>

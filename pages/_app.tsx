@@ -3,6 +3,9 @@ import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 
+import { Provider } from "react-redux";
+import { store } from "../app/store";
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const [isSSR, setIsSSR] = useState(true);
 
@@ -13,10 +16,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   if (isSSR) return null;
 
   return (
-    <div className="bg-darkblue">
-      <Navbar />
-      <Component {...pageProps} />
-    </div>
+    <Provider store={store}>
+      <div className="bg-darkblue">
+        <Navbar />
+        <Component {...pageProps} />
+      </div>
+    </Provider>
   );
 };
 
