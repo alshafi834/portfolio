@@ -30,15 +30,15 @@ const About = () => {
               Javascript and the technologies that surround it.
             </p>
           </div>
-          <div className="mt-8 lg:mt-0">
+          <div className="mt-8 lg:mt-4">
             <Image
               className="border rounded"
               src={profilePic}
-              width={270}
-              height={300}
+              width={250}
+              height={270}
               alt="profile pic"
             />
-            <span className="w-[270px] h-[300px] block border-2 border-themecolor rounded -mt-72 ml-4"></span>
+            <span className="w-[250px] h-[270px] block border-2 border-themecolor rounded -mt-64 ml-4"></span>
           </div>
         </div>
         <div></div>
