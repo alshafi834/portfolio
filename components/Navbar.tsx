@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
         </SideDrawer>
       )}
 
-      <div className="flex justify-center pt-4 pb-2 bg-darkblue text-textcolor mb:invisible sticky top-0 drop-shadow-lg">
+      <div className="z-50 flex justify-center pt-4 pb-2 bg-darkblue text-textcolor mb:invisible sticky top-0 drop-shadow-lg">
         <div className="flex justify-between w-[90%]">
           <div className="flex items-center">
             <a href="#">
