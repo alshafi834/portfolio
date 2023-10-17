@@ -30,4 +30,14 @@ export const jobs = [
       "Maintenance and update of the system based on the requirements",
     ],
   },
+  {
+    company: "Hapag-Lloyd",
+    position: "Software Engineer",
+    duration: "April 2023 - Present",
+    did: [
+      "Developing, and maintaining the company's web solutions to ensure they are functional, user-friendly, and visually appealing",
+      "Creating and optimizing the user interface (UI) and user experience (UX) for web applications with several web technologies such as Javascript, Typescript, VueJS, Vite, Quasar, Scala and so on",
+      "Collaborating with cross-functional teams, including designers, content creators, and other developers, to achieve project goals.",
+    ],
+  },
 ];
