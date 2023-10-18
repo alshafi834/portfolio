@@ -35,7 +35,11 @@ const Experience: React.FC = () => {
               {jobs[selected].position}{" "}
               <span className="text-themecolor">
                 @{" "}
-                <a href="www.trivago.com" className="hover:underline">
+                <a
+                  href={jobs[selected].companyUrl}
+                  target="_blank"
+                  className="hover:underline"
+                >
                   {jobs[selected].company}
                 </a>
               </span>

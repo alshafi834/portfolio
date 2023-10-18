@@ -18,7 +18,7 @@ const Projects = () => {
         </p>
       </header>
       <section className="flex justify-center">
-        <div className="lg:w-[70%] grid lg:grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 gap-4">
           {projects.map((lp) => (
             <div
               className="lg:w-[370px] w-[300px] bg-[#112340] p-8 rounded mx-2"
